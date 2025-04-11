@@ -12,7 +12,7 @@ class PingTestCase(TestCase):
             response = self.client.get("/ping/")
             self.assertEqual(response.status_code, 200)
             data = response.json()
-            self.assertEqual(data["ping"], "pong"
+            self.assertEqual(data["ping"], "pong")
             self.assertIsInstance(data["date"], str)
             self.assertEqual(data["date"], fecha_esperada)
 
